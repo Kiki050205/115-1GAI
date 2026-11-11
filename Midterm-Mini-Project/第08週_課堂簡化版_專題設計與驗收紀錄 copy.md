@@ -46,7 +46,55 @@
 | 資訊不足 | 輸入未公布截止日期及 SQL 題數的期末報告公告，勾選 API 並提交 | deadline 為「未知」；missing_info 包含「繳交日期」與「需要完成的 SQL 查詢題數」 | 沒有編造截止日期或 SQL 題數，已核對實際 JSON | 本機真實 API，已有 JSON 截圖 |
 | 結果保存／再送出失敗 | 尚未完整測試 | 未測 | 需確認成功結果能保留，且下一次提交失敗後會清除舊結果 | 未測 |
 | 缺 key／服務失敗 | 初次測試時 secrets.toml 沒有成功儲存 API 金鑰 | 顯示「找不到 OPENAI_API_KEY」；後續修正設定檔並成功呼叫 API | 已確認金鑰讀取問題修正；其他服務失敗情境尚未測試 | 本機實測；服務失敗部分未測 |
-| Cloud 部署（必做） | 尚未部署 Streamlit Community Cloud | 未測 | 需確認公開網址、老師觀看權限及至少一次雲端真實 API 成功 | 未測 |
+
+### 雲端部署與真實 API 驗收紀錄
+
+**驗收日期：** 2026 年 11 月 11 日
+
+**部署平台：** Streamlit Community Cloud
+
+**GitHub Repository：** Kiki050205/115-1GAI
+
+**GitHub Branch：** main
+
+**Main file path：** Midterm-Mini-Project/app.py
+
+**雲端網站網址：https://115-1gai-xjnxikrpnekabaeqvlfmus.streamlit.app/
+
+**部署結果：** 成功
+
+**Cloud Secrets：** 已設定 OPENAI_API_KEY 與 OPENAI_MODEL，未將金鑰公開於 GitHub。
+
+**測試方式：** 在 Streamlit Cloud 網站啟用 API，輸入虛構的課程公告，實際呼叫 OpenAI API。
+
+**完整測試輸入：**
+
+資料庫系統期末報告將於 2026 年 12 月 18 日截止，請同學完成 ER 圖、10 題 SQL 查詢，以及一份專題心得，並在截止日前上傳至課程平台。
+
+**實際測試結果：**
+
+- AI 成功回傳資料庫系統期末報告的整理結果。
+- 成功顯示截止日期及待辦事項。
+- 網站能正常顯示 AI 整理結果。
+- 本次雲端 API 測試成功。
+
+**人工驗證：**
+
+已確認網站可以正常執行 AI 公告整理功能，並回傳任務資訊。
+
+**API 請求次數：** 本次測試成功呼叫 1 次；累計請求數待核對。
+
+**證據：** Streamlit Cloud 成功畫面截圖（請保存）。
+
+**老師觀看權限：已驗收。使用 Chrome 無痕模式開啟 Streamlit Cloud 網址，無須登入 GitHub 或 Streamlit 帳號，即可正常進入應用程式。
+
+
+**雲端 Python 版本：** 3.14（依部署設定畫面；完整版本待確認）。
+
+**驗收結論：**
+
+本專題已完成 Streamlit Community Cloud 部署，並成功執行至少一次雲端真實 API 測試，符合課堂要求的雲端執行與 API 成功驗收項目。
+
 
 ### 真實 API 測試紀錄 A：正常資料
 
