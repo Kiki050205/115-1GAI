@@ -1,5 +1,18 @@
 # 📚 AI 作業與考試規劃助手
 
+## 🔗 期中專題成果連結
+
+- GitHub 專題：https://github.com/Kiki050205/115-1GAI
+- Streamlit Cloud 線上展示：https://115-1gai-xjnxikrpnekabaeqvlfmus.streamlit.app/
+
+## ✅ 專題完成狀態
+
+- Streamlit Cloud 部署成功
+- OpenAI API 雲端測試成功
+- 已完成設計與驗收紀錄
+- 網站可供老師直接開啟測試
+
+
 ## 一、專題介紹
 
 本專題為生成式 AI 課程的期中個人小專題，使用 Python、Streamlit 與 OpenAI API 開發「AI 作業與考試規劃助手」。
